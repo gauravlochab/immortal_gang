@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divine Hanuman - The Digital Temple</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for Sanskrit/Elegant Heading -->
+    <link href="https://fonts.googleapis.com/css2?family=Martel:wght@700;900&family=Sorts+Mill+Goudy:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="lux-loader" class="lux-loader">
+  <div class="lux-loader-inner">
+    <div class="loader-mandala"></div>
+    <div class="loader-text">अंजनीनंदनाय नमः</div>
+  </div>
+</div>
+
+<header class="lux-nav glass-card">
+  <nav class="container flex justify-between items-center">
+    <div class="nav-brand flex items-center gap-8">
+      <span class="om-static">🕉️</span>
+      <span class="brand-title">Divine Hanuman</span>
+    </div>
+    <ul class="lux-nav__menu flex gap-16" id="mainNav">
+      <li><a href="#hero" class="nav__link">Home</a></li>
+      <li><a href="#journey" class="nav__link">Journey</a></li>
+      <li><a href="#facts" class="nav__link">Divine Facts</a></li>
+      <li><a href="#prayers" class="nav__link">Prayers</a></li>
+      <li><a href="#offerings" class="nav__link">Offerings</a></li>
+      <li><a href="#temples" class="nav__link">Temples</a></li>
+      <li><a href="#community" class="nav__link">Community</a></li>
+    </ul>
+    <button class="lux-theme-toggle" id="themeToggle" aria-label="Switch theme">
+      <span class="sun">☀️</span><span class="moon">🌙</span>
+    </button>
+  </nav>
+</header>
+
+<section id="hero" class="lux-hero">
+  <canvas id="particles-bg"></canvas>
+  <div class="hero-container container">
+    <div class="lux-greeting" id="greeting"></div>
+    <div class="hero-main flex flex-col items-center">
+      <h1 class="lux-headline glow-mild">ॐ हनुमते नमः</h1>
+      <h2 class="lux-tagline">A Divine Digital Temple for Lord Hanuman</h2>
+      <div class="lux-logo-aura"><span class="aura-glow"></span><span class="hanuman-chakra"></span></div>
+      <p class="lux-quote">"Strength. Devotion. Wisdom."<br><span class="lux-quote-sanskrit">अभयम् - भक्ति - बुद्धि</span></p>
+      <div class="lux-cta-buttons">
+        <a href="#prayers" class="btn btn--primary btn--lg glow-btn">Start Prayer</a>
+        <a href="#community" class="btn btn--secondary btn--lg glass-btn">Join Community</a>
+      </div>
+      <div class="lux-daily-blessing" id="blessingText">May Hanuman Ji bless you today.</div>
+    </div>
+    <div class="lux-morphing-nav" id="morphNav"></div>
+  </div>
+</section>
+
+<div class="lux-divider-parallax"></div>
+
+<section id="journey" class="lux-section lux-parallax-section">
+  <div class="container">
+    <h2 class="section-title">Hanuman Ji's Divine Journey</h2>
+    <div class="timeline-glass">
+      <ul class="lux-timeline" id="hanumanTimeline">
+        <!-- Timeline entries get injected dynamically for animation -->
+      </ul>
+    </div>
+  </div>
+</section>
+
+<div class="lux-gradient-fade"></div>
+
+<section id="facts" class="lux-section">
+  <div class="container">
+    <h2 class="section-title">Divine Facts & Poses <span class="lux-decor-symbol">✶</span></h2>
+    <div class="lux-cards-3d-wrapper" id="hanumanFacts">
+      <!-- 3D Cards dynamically injected -->
+    </div>
+  </div>
+</section>
+
+<div class="lux-divider-parallax"></div>
+
+<section id="prayers" class="lux-section lux-section-glass">
+  <div class="container">
+    <h2 class="section-title">Sacred Prayers & Mantras <span class="lux-decor-symbol">🪔</span></h2>
+    <div class="lux-prayer-grid">
+      <div class="glass-card lux-mantra-player flex flex-col items-center">
+        <span class="mantra-player-label">Divine Mantra Player</span>
+        <div class="mantra-display">ॐ हं हनुमते नमः</div>
+        <button class="btn btn--primary glow-btn" id="playMantra">Play & Chant</button>
+        <div id="waveform" class="lux-waveform"></div>
+        <div class="lux-mantra-counter">
+          <span class="mantra-count-label">Today's Mantras</span>
+          <span class="mantra-count" id="mantraCount">108</span>
+        </div>
+      </div>
+      <div class="glass-card lux-prayer-list">
+        <h3>Sacred Prayers</h3>
+        <div class="prayer-item">
+          <h4>🙏 Hanuman Chalisa</h4>
+          <p>40-verse prayer by Tulsidas, most powerful Hanuman devotion</p>
+        </div>
+        <div class="prayer-item">
+          <h4>⚔️ Hanuman Baan</h4>
+          <p>Powerful prayer for protection from negative energies</p>
+        </div>
+        <div class="prayer-item">
+          <h4>🌟 Hanuman Ashtak</h4>
+          <p>Eight-verse prayer for removing obstacles and difficulties</p>
+        </div>
+      </div>
+      <div class="glass-card lux-mantra-types">
+        <h3>Divine Mantras</h3>
+        <div class="mantra-type">
+          <h4>Beej Mantra</h4>
+          <div class="mantra-text">ॐ हं हनुमते नमः</div>
+          <p>Salutations to Hanuman, remover of obstacles</p>
+        </div>
+        <div class="mantra-type">
+          <h4>Simple Mantra</h4>
+          <div class="mantra-text">ॐ हनुमते नमः</div>
+          <p>Salutations to Hanuman</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="lux-gradient-fade"></div>
+
+<section id="offerings" class="lux-section">
+  <div class="container">
+    <h2 class="section-title">Sacred Offerings <span class="lux-decor-symbol">🌸</span></h2>
+    <div class="offerings-grid">
+      <div class="glass-card offering-category">
+        <div class="offering-icon">🌼</div>
+        <h3>Divine Flowers</h3>
+        <ul class="offering-list">
+          <li>🌸 Jasmine (Chameli) - His favorite</li>
+          <li>🌻 Marigold</li>
+          <li>🌹 Red flowers</li>
+        </ul>
+      </div>
+      <div class="glass-card offering-category">
+        <div class="offering-icon">🍯</div>
+        <h3>Sacred Food</h3>
+        <ul class="offering-list">
+          <li>🔴 Laal ladoo (His favorite)</li>
+          <li>🟡 Besan ladoo</li>
+          <li>🍯 Jaggery and gram</li>
+          <li>🌿 Paan (Banarasi)</li>
+        </ul>
+      </div>
+      <div class="glass-card offering-category">
+        <div class="offering-icon">🕯️</div>
+        <h3>Divine Elements</h3>
+        <ul class="offering-list">
+          <li>🔴 Sindoor (vermilion)</li>
+          <li>🌿 Laung (cloves)</li>
+          <li>🥥 Supari</li>
+          <li>🌼 Jasmine oil with sindoor</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="lux-divider-parallax"></div>
+
+<section id="temples" class="lux-section lux-section-glass">
+  <div class="container">
+    <h2 class="section-title">Famous Temples <span class="lux-decor-symbol">🏛️</span></h2>
+    <div class="temples-grid">
+      <div class="glass-card temple-card">
+        <h3>🏛️ Yantrodharaka Hanuman Temple</h3>
+        <p class="temple-location">Hampi, Karnataka</p>
+        <p class="temple-significance">Installed by Vyasaraja, Hanuman in meditation pose within sacred yantra</p>
+      </div>
+      <div class="glass-card temple-card">
+        <h3>⛰️ Anjaneya Hill (Anjanadri)</h3>
+        <p class="temple-location">Hampi, Karnataka</p>
+        <p class="temple-significance">Believed birthplace of Hanuman, 575 steps to climb to divine darshan</p>
+      </div>
+      <div class="glass-card temple-card">
+        <h3>🙏 Sankat Mochan Temple</h3>
+        <p class="temple-location">Varanasi, Uttar Pradesh</p>
+        <p class="temple-significance">Founded by Tulsidas, where Hanuman faces devotees directly</p>
+      </div>
+      <div class="glass-card temple-card">
+        <h3>🚪 Hanuman Garhi</h3>
+        <p class="temple-location">Ayodhya, Uttar Pradesh</p>
+        <p class="temple-significance">Protector of Ram Janmabhoomi, 76 sacred steps to climb</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="lux-divider-parallax"></div>
+
+<section id="community" class="lux-section">
+  <div class="container">
+    <h2 class="section-title">Join the Devotee Community <span class="lux-decor-symbol">🌸</span></h2>
+    <div class="community-flexbox flex gap-24 flex-wrap">
+      <div class="glass-card community-left">
+        <h3 class="community-title">Sacred Numbers</h3>
+        <div id="communitySacredNumbers" class="sacred-nums flex gap-16"></div>
+        <div class="circle-btns flex gap-8">
+          <button class="circle-btn btn--secondary" id="prayerWheelBtn">🔄<span class="spinner"></span></button>
+          <button class="circle-btn btn--primary glowing-btn" id="toggleAmbient">🔊</button>
+        </div>
+        <div class="namaste-static">🙏</div>
+        <p class="community-blessing">May your devotion bring infinite blessings</p>
+      </div>
+      <div class="glass-card community-right flex flex-col">
+        <h3>Share Your Prayer Intention</h3>
+        <textarea class="form-control" id="communityPrayer" placeholder="Share your prayer for the world or for Hanuman..." rows="3"></textarea>
+        <button class="btn btn--primary btn--full-width" id="sharePrayer">Share Prayer</button>
+        <div id="communityPrayerFeed"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="lux-footer">
+  <div class="container flex justify-between flex-wrap">
+    <div>
+      <h4 class="footer-title">Divine Hanuman</h4>
+      <p class="footer-quote">May every prayer and every click here earn celestial merit.<br><span class="footer-bless">Jai Shree Ram • Jai Hanuman</span></p>
+    </div>
+    <div>
+      <ul class="footer-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#prayers">Prayers</a></li>
+        <li><a href="#offerings">Offerings</a></li>
+        <li><a href="#temples">Temples</a></li>
+        <li><a href="#community">Community</a></li>
+      </ul>
+    </div>
+  </div>
+  <span class="lux-footer-copyright">&copy; 2025 Divine Hanuman. All rights reserved.</span>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>
