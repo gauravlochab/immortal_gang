@@ -1,3 +1,3 @@
-# immortal_gang
+# IMMORTAL GANG
 
 ## JAI SHREE RAM
